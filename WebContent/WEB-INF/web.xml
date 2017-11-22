@@ -74,6 +74,11 @@
 		<param-name>primefaces.THEME</param-name>
 		<param-value>smoothness</param-value>
 	</context-param>
+	<filter>
+		<filter-name>PrimeFaces FileUpload Filter</filter-name>
+		<filter-class>org.primefaces.webapp.filter.FileUploadFilter</filter-class>
+	</filter>
+	
 	<!-- upload de imagens -->
 	<filter-mapping>
 		<filter-name>PrimeFaces FileUpload Filter</filter-name>

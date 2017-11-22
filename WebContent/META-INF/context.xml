@@ -17,9 +17,9 @@
 	timeBetweenEvictionRunsMillis="5000"
 	minEvictableIdleTimeMillis="60000"
 	antiJARLocking="false"
-	username="postgre"
+	username="postgres"
 	password="root"
-	url="jdbc:postgresql://localhost:5452/jsf?autoReconect=true"
+	url="jdbc:postgresql://localhost:5452/postgres?autoReconect=true"
 	/>
 </Context>
 <!-- Classe do tomcat que esta lendo esse arquivo é org.apache.tomcat.dbcp.dbcp.PoolingDataSource -->
