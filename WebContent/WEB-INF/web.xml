@@ -19,16 +19,21 @@
 	</session-config>
 	<error-page>
 		<exception-type>org.springframework.security.access.AccessDeniedException</exception-type> <!-- Quanto tentar acessar uma pagina que usuario não está permitir -->
-		<location>/erro/acessoNegado.jsf</location>
+		<location>/error/acessoNegado.jsf</location>
 	</error-page>
 	<error-page>
 		<exception-type>com.sun.faces.context.FacesFileNotFoundException</exception-type> <!-- Caso a pagina não exista -->
-		<location>/erro/paginaNaoEncontrada.jsf</location>
+		<location>/error/paginaNaoEncontrada.jsf</location>
 	</error-page>
 
 	<error-page>
 		<error-code>403</error-code>
 		<location>/error/acessoNegado.jsf</location>
+	</error-page>
+	
+	<error-page>
+		<error-code>404</error-code>
+		<location>/error/404.jsf</location>
 	</error-page>
 
 	<error-page>
