@@ -99,7 +99,7 @@ public class FilterOpenSessionInView extends DelegatingFilterProxy implements Se
 				if (sf.getCurrentSession().beginTransaction().isActive()) {
 					sf.getCurrentSession().flush();
 					sf.getCurrentSession().clear();
-					;
+					
 				}
 				if (sf.getCurrentSession().isOpen()) {
 					sf.getCurrentSession().close();
